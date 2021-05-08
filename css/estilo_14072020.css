@@ -1,0 +1,301 @@
+* {
+    scroll-behavior: smooth;
+}
+header{
+
+    width: 100%;
+}
+
+.radio{
+  border-radius: 35%;
+}
+
+/* 
+.menu_bar{
+    display: none;
+} */
+
+  nav{
+   
+    background-color:rgb(248, 249, 250) ; /*rgb(20, 51, 75)*/ /*  color con scroll*/
+    /* color:rgb(42, 127, 184) !important; */
+    padding: 8px 50px;
+    text-transform: uppercase;
+	
+}
+  nav a{
+   
+    /* color:rgb(42, 127, 184); */
+    float: right;
+     text-decoration: none !important; 
+	padding: 10px 20px;
+	line-height: normal;
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+	-webkit-transition: all 500ms ease ; /* estas 3 lineas se utilizan para que haga la transicion al pasar el mouse por arriba*/
+	-o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+  nav a span{
+    margin-right: 5px;
+}
+
+a.Enlacelogo{
+
+	color: #595959;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: normal;
+	float: left;
+    text-decoration: none !important;
+    /* margin-right: 500px; */
+
+}
+
+a.Footer{
+    text-decoration: none !important;
+     font-size: 15px;
+}
+a.Footer:hover{
+  color: white !important;
+  background-color: rgb(42, 127, 184) !important;
+  border-radius: 100px !important;
+  /* padding: 5px; */
+}
+
+
+ .padingfooter{
+ 
+    padding-right: 60px !important;
+    padding-left: 60px !important;
+    text-align: center !important;
+    width: 100% !important;
+    position: relative;
+ }
+ .margeninput{
+     margin-bottom: 10px !important;
+ }
+
+ 
+#Portada {
+    
+    position: relative;
+    background: url("../img/Portada2.jpeg") no-repeat center center;
+
+    background-size: cover;
+
+    padding-top: 100px;
+    padding-bottom: 250px;
+    /* filter:brightness(0.3); */
+    z-index: 1 ;
+  }
+
+  #Portada::after {
+
+    position: absolute;
+    background-color: rgba(26, 69, 101, .7) ;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 400px;
+    /* filter:brightness(0.4); */
+    z-index: -1 ;
+  }
+
+  
+
+  h2.ContactoMargen{
+    margin-bottom: 50px !important;
+  
+  }
+
+  .Formulario{
+      margin-bottom: 100px !important;
+
+  }
+
+  hr.linea{
+      border-width: 10px !important;
+      color:white !important;
+      overflow: visible !important;
+      box-sizing: content-box !important;
+  }
+
+  
+   textarea.heigtcosulta {
+   
+    height: 150px !important;  
+   }
+
+   .colorsection{
+    background-color: rgb(26, 69, 101)  !important;   /*#205279   */
+    color: white;
+   }
+    
+   aside{
+       /* display: block;  */
+       background-color: rgb(212, 232, 247);
+       margin:5px 10px 10px 10px;
+       padding-top: 20px;
+      /* height: 1975px;*/
+         /* width: 290px;   */
+       float: right !important;
+       border-left: solid;
+       border-left-color: #f8f9fa  ;
+   }
+
+    .t-1{
+    width: 300px;
+    } 
+
+    .margenIconos{
+      margin-right: 5px;
+    }
+
+    li.red{
+      color: red !important;
+    }
+   
+
+/***************************************Estilo sin scroll****************************************/
+a.Sinscroll{
+    color: white;
+}
+
+a.Sinscroll:hover{
+    color: white !important;
+    background-color: rgb(42, 127, 184) !important;
+    border-radius: 50px !important;
+     /* padding: 10px 20px;  */
+    }
+
+    a.ColorEnlace{
+        color: white !important;
+        font-size: 18px;
+    }
+
+/*****************************************Media querys*******************************/
+
+
+@media (max-width: 992px) 
+{
+    aside.t-1 {
+     width: 100px !important;
+     }
+
+     iframe.twitter-timeline {
+      height: 1450px !important;
+    }
+    
+
+ }   
+/*Minimo*/
+
+ @media (min-width: 993px) 
+ {
+      .t-1 {
+      width: 300px !important;
+      }
+
+  }   
+
+
+ 
+ @media (max-width: 575.98px) {
+     
+    nav a.Sinscroll {
+        display: block;
+        float: none ; 
+        padding-top: 10px !important;
+        border-bottom: 1px solid rgb(255,255,255);
+        color: white;
+      
+      
+    }
+ }
+
+ @media (max-width: 767.98px) {
+    /* nav{ @media (min-width: 768px)
+       
+    }
+     */
+   nav a.Sinscroll {
+       display: block;
+       float: none ; 
+       padding-top: 10px !important;
+       border-bottom: 1px solid rgb(255,255,255);
+       color: white;
+      
+     
+   }
+}
+
+/*HASTA QUE EL MAXIMO SEA ESTE VA A TENER ESTAS PROPIEDADES*/
+ 
+
+@media (max-width: 991.98PX) {  
+   nav a.Sinscroll {
+       display: block;
+       float: none ; 
+       padding-top: 15px !important;
+       padding-left: 10px !important;
+       border-bottom: 1px solid rgb(255,255,255);
+       color: rgba(255, 255, 255, 0.7) !important;
+     
+   }
+   nav a.Sinscroll:hover {
+    color: white !important;
+    background-color: rgb(42, 127, 184) !important;
+    border-radius: 10px !important;
+     /* padding: 10px 20px;  */
+  
+}
+
+    #tituloEstudio{
+        color: rgba(255, 255, 255, 0.7) ;
+    }
+   #mainNav{
+    background-color:  rgb(26, 69, 101, .7) ; 
+   
+   }
+   
+  
+}
+
+
+/*HASTA QUE EL MINIMO SEA ESTO*/
+
+@media (min-width: 992PX) { /*Color de barra de navegacion SinScroll*/   
+   
+    #mainNav  {    /*Estilo de la barra de navegacion*/
+        border-color: transparent;
+        background-color:  rgb(26, 69, 101, .9); 
+
+
+      }
+      #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);       /*Color de Esttudio contable sin scroll*/
+    
+      }
+      #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+        color: #fff !;
+      }
+
+      #mainNav .Sinscroll{
+        color: rgba(255, 255, 255, 0.7);
+      }
+    
+
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav .navbar-brand > li.nav-item > a.nav-link:focus.active {
+  
+    color: white !important;
+    background-color: rgb(42, 127, 184) !important;
+    border-radius: 50px !important;
+  /*Aca se cambia el color de los itemMenu cuando bajamos el scroll*/
+}
+
+
+      
+}
